@@ -1,0 +1,457 @@
+/*RESET CSS BEGIN*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img {
+  max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+/*HELPER CLASS END*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+
+
+/* Navigation & Hearder bar*/
+.wrapper{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  background-color: transparent;
+  position: relative;
+  width:100%;
+}
+header .logo img{
+  max-width: 100px;
+}
+header.sticky{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  transform:translateY(-200%);
+  transition: 0.2s;
+  z-index: 5;
+}
+body.scroll header.sticky{
+  transform:translateY(0);
+
+}
+.nav-wrapper{
+    max-width: 1200px;
+    background: #231b1b;
+    position: relative;
+    margin: 0 auto;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav.nav-wrapper ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom:0;
+}
+nav.nav-wrapper ul li a{
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+nav.nav-wrapper ul li a:hover{
+  border-bottom: 1px solid #ffffff;
+}
+/* PARALLAX PAGE STYLES START*/
+.cover-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/schpics.jpg')
+  right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+ul#scene li.name{
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+
+}
+
+ul#scene li.title{
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 60px;
+  color: white;
+  width: 100%
+}
+#scene{
+  margin-top: 100px;
+}
+.btn{
+  width:100%;
+  text-align: center;
+  margin-top: 150px;
+}
+.portfolio-btn,
+.contact-btn{
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.portfolio-btn:hover,
+.contact-btn:hover{
+  background:white;
+  color: black;
+
+}
+.porfolio-btn{
+  margin-right: 30px;
+}
+.contact-btn{
+  margin-left: 30px;
+}
+/* MASONRY SECTION STYLES END*/
+
+/* PARALLAX PAGE STYLES START*/
+.masonry-grid {
+  position: relative;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 350px;
+}
+tall-img {
+  height: 450px;
+  margin-bottom:0;
+}
+
+
+h2.sub-title{
+  postion: relative;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+}
+h2.sub-title::after {
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: "";
+  width: 120px;
+  margin: 30px auto 0 auto;
+}
+
+
+/* I LOVE PHOTOGRARY ANIMATION START*/
+section.beating-heart{
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('../images/hero-bg.jpg') no-repeat right bottom / cover;
+  text-align: center;
+  height: 100vh;
+  padding: 50px 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;/* u can use top or bottom
+  instead of center depending on what you what*/
+  aligh-self: center; /* u can use top or bottom
+  instead of center depending on what you what*/
+}
+section.beating-heart span {
+  font-size: 80px;
+  line-height: 105px;
+}
+section.beating-heart h2::after{
+  background: white;
+}
+.heart {
+  position: relative;
+  width: 75px;
+  margin: 0 50px;
+  fill:red;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse{
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.25);
+  }
+  25%{
+    transform:scale(1.15);
+  }
+  35%{
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+/* I LOVE PHOTOGRAPHY ANIMATION END */
+
+/* SLIDER START */
+.slider-div h2 {
+    margin-bottom: 0;
+   }
+.slider {
+   margin: 20px auto;
+   text-align: center;
+    padding: 20px;
+    color: white;
+}
+.slide {
+	max-height: 300px;
+  padding: 15px 20px;
+}
+.slider-div{
+  padding: 1px 0;
+  max-width: auto;
+}
+.slick-prev,
+.slick-next{
+  background: black;
+  width: 40px;
+  height: 40px;
+  z-index:1;
+}
+.slick-prev{
+  left:0;
+}
+.slick-next{
+  right: 0;
+}
+.slick-next:hover,
+.slick-prev:hover{
+  background: black;
+}
+
+
+
+/* START FOOTER*/
+#footer{
+  position: relative;
+  font-height: 30px;
+  background: black;
+  width: 100%;
+  height: 40px;
+  z-index: -1;
+}
+.designer{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 7px;
+}
+
+/* END FOOTER*/
